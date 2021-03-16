@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-    constructor() {
-        super();
-        this.state = {
-            displayBio: false
-        }
+
+    state = {
+        displayBio: false
+    };
+
+    toggleDisplayBio = () => {
+        this.setState({
+            displayBio: !this.state.displayBio
+        });
     }
 
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         displayBio: false
+    //     }
+    // }
+
     render() {
-        const toggleDisplayBio = () => {
-            this.setState({
-                displayBio: !this.state.displayBio
-            });
-        }
+        // const toggleDisplayBio = () => {
+        //     this.setState({
+        //         displayBio: !this.state.displayBio
+        //     });
+        // }
 
         const bio = this.state.displayBio
             ? (
@@ -21,12 +32,12 @@ class App extends Component {
                     <p>I live in Dublin, Ireland</p>
                     <p>My fav sport is Cricket</p>
                     <p>Also, I love music</p>
-                    <button className="btn" onClick={toggleDisplayBio}>Show Less</button>
+                    <button className="btn" onClick={this.toggleDisplayBio}>Show Less</button>
                 </div>
 
             )
             : (
-                <button className="btn" onClick={toggleDisplayBio}>Read More</button>
+                <button className="btn" onClick={this.toggleDisplayBio}>Read More</button>
             );
 
         return (
