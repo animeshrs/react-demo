@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Project from './Project';
 
 class App extends Component {
 
@@ -46,6 +47,10 @@ class App extends Component {
                 <p>My name is Animesh. I am a software developer.</p>
                 <p>I always try to learn new technologies.</p>
                 {bio}
+
+                <hr />
+
+                <Project />
             </div>
         );
     }
