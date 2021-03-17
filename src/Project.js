@@ -1,15 +1,21 @@
-import React from 'react';
-import PROJECTS from '../src/data/projects'
+import React, { Component } from 'react'
 
+class Project extends Component {
+    render() {
+        const { title, description, image, link } = this.props.project;
+        console.log(`this.props`, this.props);
 
-const Project = () => {
-    return (
-        <div>
-            {PROJECTS.map((p) => {
-                return <div key={p.id}>{p.title}</div>
-            })}
-        </div>
-    )
+        return (
+            <div style={{ display: 'inline-block', width: 300, margin: 10 }}>
+                <h3>{title}</h3>
+                <img src={image} alt="profile" style={{ width: 200, height: 120 }} />
+                <div>
+                    <a href={link}>{link}</a>
+                </div>
+                <p>{description}</p>
+            </div>
+        )
+    }
 }
 
 export default Project;

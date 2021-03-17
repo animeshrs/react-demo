@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Project from './Project';
+import Projects from './Projects';
 
 class App extends Component {
 
@@ -50,7 +50,7 @@ class App extends Component {
 
                 <hr />
 
-                <Project />
+                <Projects />
             </div>
         );
     }
