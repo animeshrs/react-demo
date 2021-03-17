@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Profiles from './Profiles';
 import Projects from './Projects';
 
 class App extends Component {
@@ -49,8 +50,10 @@ class App extends Component {
                 {bio}
 
                 <hr />
-
                 <Projects />
+
+                <hr />
+                <Profiles />
             </div>
         );
     }
