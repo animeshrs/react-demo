@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Profiles from './Profiles';
-import Projects from './Projects';
-import './index.css';
-import profile from '../src/assets/profile.png';
+import Projects from '../Projects';
+import '../index.css';
+import profile from '../assets/profile.png';
 import Title from './Title';
 
 class App extends Component {

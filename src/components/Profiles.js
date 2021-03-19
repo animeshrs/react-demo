@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SocialProfiles from '../src/data/socialProfiles';
-import Profile from './data/Profile';
+import SocialProfiles from '../data/socialProfiles';
+import Profile from '../data/Profile';
 
 export default class Profiles extends Component {
     render() {
