@@ -49,7 +49,7 @@ class App extends Component {
             <div>
                 <img src={profile} alt="profile image" className="profile" />
                 <p>My name is Animesh.</p>
-                <Title />
+                {this.state.displayBio ? <Title /> : null}
                 <p>I always try to learn new technologies.</p>
                 {bio}
 
