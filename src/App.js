@@ -3,6 +3,7 @@ import Profiles from './Profiles';
 import Projects from './Projects';
 import './index.css';
 import profile from '../src/assets/profile.png';
+import Title from './Title';
 
 class App extends Component {
 
@@ -47,7 +48,8 @@ class App extends Component {
         return (
             <div>
                 <img src={profile} alt="profile image" className="profile" />
-                <p>My name is Animesh. I am a software developer.</p>
+                <p>My name is Animesh.</p>
+                <Title />
                 <p>I always try to learn new technologies.</p>
                 {bio}
 
